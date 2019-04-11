@@ -1,0 +1,134 @@
+
+    
+<!doctype html>
+<html>
+
+<head>
+    <title>LULA - Digital Immigrant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Megrim" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+<!-- HEADER WITH SOCIAL LINKS -->
+
+    <div class="header">
+        <h1>LULA</h1>
+        <ul class="social">
+            <li class="social">
+                <a href="https://twitter.com/lulatree">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="social">
+                <a href="https://www.instagram.com/lula.xyz">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li class="social">
+                <a href="https://www.facebook.com/lullabyLula/">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="mob-only profile-pic">
+        <img src="images/Lula.jpg" alt="Image of Lula">
+    </div>
+<!-- make sticky nav -->
+    <nav id="nav">
+        <ul>
+            <li>
+                <a href=#about>
+                    ABOUT
+                </a>
+            </li>
+            <li>
+                <a href=#shows>
+                    SHOWS
+                </a>
+            </li>
+            <li>
+                <a href=#contact>
+                    CONTACT
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+<!-- ABOUT SECTION -->
+
+<div class="wrapper">
+
+    <div class="about" id="about">
+        <h2>ABOUT</h2>
+        <p> Known as a creative gypsy & digital immigrant, Lula is a multidisciplinary artist who creates audio visual sensory experiences. Born in the sub-Saharan and residing in NY-LON, Lula travels through intergalactic planes using sound waves.</p>
+
+        <iframe src="https://www.youtube.com/embed/CN4pPrCSicY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
+        
+    </div>
+
+    <!-- UPCOMING SHOWS SECTION -->
+    <!-- populate from google sheets -->
+
+    <div class="shows" id="shows">
+        <h2>SHOWS</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>EVENT</th>
+                    <th>LOCATION</th>
+                    <th>DATE</th>
+                    <th>TICKETS</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <p>Watch Lula's performance at <a href="http://www.tedxteen.com/talks/the-journey-of-a-digital-migrant-lula-mebrahtu">TEDxTeen</a> from June 2017.</p>
+
+        <iframe src="https://www.youtube.com/embed/qOQ_pDJAt40?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- BOOKINGS SECTION -->
+    <!-- could potentially combine this and get in touch section -->
+    <div class="contact" id="contact">
+        <h2>GET IN TOUCH</h2>
+        <form action="https://formspree.io/lulam3brahtu@gmail.com" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="_replyto">
+            </div>
+            <div>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="message"></textarea>
+            </div>
+            <input type="hidden" name="_next" value="https://lulabox.io/thanks" />
+            <input type="hidden" name="_cc" value="amy@adickens.co.uk" />
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="submit" value="Send">
+        </form>
+    </div>
+
+
+</div>
+<script src="jquery_lite.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
