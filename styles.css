@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', serif;
+    color: black;
+    box-sizing: border-box;
+}
+
+.wrapper { 
+    padding: 0 1em;
+    margin: 0 auto;
+    display: block;
+    max-width: 900px;
+}
+
+.mob-only {
+    display: none;
+}
+
+.about { 
+    padding: 20px 0;
+    text-align: center;
+}
+
+.about  h2 {
+    font-family: 'Megrim', sans-serif;
+    font-size: 2.5em;
+    padding: 10px;
+    text-align: center;
+}
+
+.about p{
+    line-height: 1.5;
+    text-justify: newspaper;   
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    padding: 50px 0 20px;
+}
+
+label, input {
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    font-size: 1em;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid grey;
+}
+
+input[type=submit] {
+    background: black;
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 0.75em;
+}
+
+.contact h2 {
+    font-family: 'Megrim', cursive;
+    font-size: 2.5em;
+    padding: 10px;
+    text-align: center;
+}
+
+.contact {
+    margin: 0 auto 4em;
+    max-width: 500px;
+}
+
+.contact h2 {
+    font-family: 'Megrim', cursive;
+    font-size: 2.5em;
+    padding: 10px;
+    text-align: center;
+}
+
+.header {
+    height: calc(100vh - 4em);
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-image: url("images/Lula.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+.header h1 {
+    font-family: 'Megrim', sans-serif;
+    font-size: 5em;
+    padding: 20px;
+}
+
+.header span {
+    font-size: 2rem;
+}
+
+.header ul.social {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1.5em;
+    list-style: none;
+}
+
+.header li.social {
+    padding: 1em 0.75em 0 0.75em; 
+    color: inherit;
+    text-decoration: none;
+    font-size: 2.25em;
+}
+
+.header p {
+    position: absolute;
+    font-size: 1.25em;
+    bottom: 80px;
+    left: 60px;
+}
+
+nav {
+    background-color: black;
+    text-align: center;
+    padding: 1em;
+
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a{
+    color: white;
+    font-family: 'Megrim', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em; 
+    padding: 0 2rem;
+
+}
+
+nav a:hover {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+.shows  h2 {
+    font-family: 'Megrim', cursive;
+    font-size: 2.5em;
+    padding: 10px;
+    text-align: center;
+}
+
+.shows table {
+    width: 100%;
+    padding: 20px;
+
+}
+
+.shows th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.shows h3 {
+    font-family: 'Megrim', cursive;
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+}
+
+.shows p{
+    text-align: center;
+    text-justify: newspaper;
+    padding: 20px 0 0;
+    line-height: 1.5;   
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 900px){
+    nav {
+        display: none;
+    }
+    .header {
+        height: auto;
+        background: white;
+        font-size: 0.5em;
+    }
+    .header li.social {
+        padding-top: 1.85em;
+    }
+    .profile-pic img {
+        width: 100%;
+    }
+    .mob-only {
+        display: block;
+    }
+    iframe {
+        height: 65vw;
+    }
+    .shows table {
+        padding: 0;
+    }
+    table tr {
+        border-bottom: 1px solid rgb(129, 16, 16);
+        display: block;
+        padding: 1em 0;
+    }
+    table thead {
+        display: none;
+    }
+    table tbody:last-child tr {
+        border: none;
+    }
+    table td {
+        display: block;
+        border: 0;
+        text-align: center;
+    }
+}
